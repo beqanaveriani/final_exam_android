@@ -78,6 +78,7 @@ class LoginActivity : AppCompatActivity() {
     private fun updateUI(currentUser: FirebaseUser?){
         if (currentUser != null){
             Toast.makeText(baseContext, "Hello, " + currentUser.email, Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, MoviesActivity::class.java))
             finish()
         } else {
             Toast.makeText(baseContext, "Please sign in", Toast.LENGTH_SHORT).show()

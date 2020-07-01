@@ -7,4 +7,5 @@
     <string name="sign_up">JOIN THE COMMUNITY</string>
     <string name="sign_up_2">Sign Up</string>
     <string name="enter_your_password_2">Repeat password</string>
+    <string name="sign_out">Sign Out</string>
 </resources>

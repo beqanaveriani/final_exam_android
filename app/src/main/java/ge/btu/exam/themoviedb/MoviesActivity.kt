@@ -1,13 +1,16 @@
 package ge.btu.exam.themoviedb
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.auth.FirebaseAuth
 import ge.btu.exam.themoviedb.external.ServiceBuilder
 import ge.btu.exam.themoviedb.external.TmdbEndpoints
 import ge.btu.exam.themoviedb.models.ItemModel
 import ge.btu.exam.themoviedb.models.response.PopularMovies
+import kotlinx.android.synthetic.main.activity_movies.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -18,7 +21,7 @@ class MoviesActivity : AppCompatActivity() {
 
     val items = ArrayList<ItemModel>()
 
-    // TODO [SH] Initialize recycler view
+    private lateinit var adapter: RecyclerViewAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,15 +30,29 @@ class MoviesActivity : AppCompatActivity() {
     }
 
     private fun init(){
-        // TODO [SH] Add sign out button and linear layout manager
+        movieView.layoutManager = LinearLayoutManager(this)
+        adapter = RecyclerViewAdapter(items, this)
+        movieView.adapter = adapter
+        auth = FirebaseAuth.getInstance()
+
+        signOutButton.setOnClickListener {
+            signOut()
+        }
+
 
         loadExamples()
+    }
+
+    private fun signOut(){
+        auth.signOut()
+        startActivity(Intent(this, LoginActivity::class.java))
+        finish()
     }
 
 
     private fun addItem(itemData: ItemModel){
         items.add(itemData)
-        // TODO [SH] notify adapter about change
+        adapter.notifyItemInserted(items.size - 1)
     }
 
     private fun loadExamples(){
