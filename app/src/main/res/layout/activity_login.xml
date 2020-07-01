@@ -39,7 +39,8 @@
                 android:hint="@string/enter_your_email"
                 android:maxLines="1"
                 android:inputType="textEmailAddress"
-                android:paddingHorizontal="20dp" />
+                android:paddingHorizontal="20dp"
+                android:importantForAutofill="no" />
 
             <EditText
                 android:id="@+id/passwordInput"
@@ -52,7 +53,8 @@
                 android:maxLines="1"
                 android:hint="@string/enter_your_password"
                 android:inputType="textPassword"
-                android:paddingHorizontal="20dp" />
+                android:paddingHorizontal="20dp"
+                android:importantForAutofill="no" />
 
             <Button
                 android:id="@+id/signInButton"
@@ -90,10 +92,12 @@
                 android:layout_height="50dp"
                 android:layout_gravity="bottom"
                 android:layout_margin="20dp"
-                android:background="#01b4e4"
+                android:background="#FFFF"
                 android:text="@string/sign_up"
-                android:textColor="#ECE1E1"
-                android:textSize="18sp" />
+                android:textColor="#21A6D8"
+                android:textSize="21sp" />
+
+
 
         </LinearLayout>
 

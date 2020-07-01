@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#032541"
+    tools:context=".SignUpActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="118dp"
+            android:layout_marginBottom="20dp"
+            android:src="@mipmap/tmdb_logo_2" />
+
+        <EditText
+            android:id="@+id/emailInputFirebase"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#31F6F4F4"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:hint="@string/enter_your_email"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="20dp" />
+
+        <EditText
+            android:id="@+id/passwordInputFirebase"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="#31F6F4F4"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:hint="@string/enter_your_password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="20dp" />
+
+        <EditText
+            android:id="@+id/passwordInputFirebaseRepeat"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="#31F6F4F4"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:hint="@string/enter_your_password_2"
+            android:inputType="textPassword"
+            android:paddingHorizontal="20dp" />
+
+        <Button
+            android:id="@+id/signUpButtonFirebase"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:background="#FFFF"
+            android:text="@string/sign_up_2"
+            android:textColor="#21A6D8"
+            android:textSize="21sp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

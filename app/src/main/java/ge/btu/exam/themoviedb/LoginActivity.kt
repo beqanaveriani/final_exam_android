@@ -1,5 +1,6 @@
 package ge.btu.exam.themoviedb
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
@@ -19,7 +20,7 @@ class LoginActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         signUpButton.setOnClickListener {
-            // TODO [SH] add sign up activity
+            startActivity(Intent(this, SignUpActivity::class.java))
             finish()
         }
 
@@ -61,6 +62,8 @@ class LoginActivity : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     val user = auth.currentUser
+                    Toast.makeText(baseContext, "Successfully logged in",
+                        Toast.LENGTH_SHORT).show()
                     updateUI(user)
                 } else {
                     Toast.makeText(baseContext, "Authentication failed.",
