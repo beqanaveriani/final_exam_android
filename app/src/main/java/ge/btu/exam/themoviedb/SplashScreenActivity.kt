@@ -13,7 +13,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
         tmdb_logo.alpha = 0f;
         tmdb_logo.animate().setDuration(3500).alpha(1f).withEndAction{
-            val mainPage = Intent(this, MainActivity::class.java)
+            val mainPage = Intent(this, LoginActivity::class.java)
             startActivity(mainPage)
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
             finish()
