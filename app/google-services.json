@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "358604405477",
+    "firebase_url": "https://the-movie-db-bba5c.firebaseio.com",
+    "project_id": "the-movie-db-bba5c",
+    "storage_bucket": "the-movie-db-bba5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358604405477:android:662d9733591895c9c9320c",
+        "android_client_info": {
+          "package_name": "ge.btu.exam.themoviedb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358604405477-f1v3pqts2dta26icdtgc0jhme05pi67h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ge.btu.exam.themoviedb",
+            "certificate_hash": "879d5e7e1af41ed8b0294ea05264992db82fe797"
+          }
+        },
+        {
+          "client_id": "358604405477-p0vv37u87j5b32srnr2iaj33qkd9qg3j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi-opt5N6Lvi-1kRKLFakGpauLXtIFyp4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358604405477-p0vv37u87j5b32srnr2iaj33qkd9qg3j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
