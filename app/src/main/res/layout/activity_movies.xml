@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#032541"
     tools:context=".MoviesActivity">
 
 
@@ -13,13 +14,14 @@
         android:orientation="vertical">
 
         <Button
+            android:layout_margin="10dp"
             android:layout_marginTop="5dp"
-            android:background="#e74c3c"
-            android:textColor="#FFFFFF"
+            android:background="#FFFF"
+            android:textColor="#21A6D8"
             android:padding="10dp"
             android:layout_gravity="center"
             android:id="@+id/signOutButton"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/sign_out"/>
 

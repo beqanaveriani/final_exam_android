@@ -20,7 +20,6 @@ class MoviesActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
 
     val items = ArrayList<ItemModel>()
-
     private lateinit var adapter: RecyclerViewAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {

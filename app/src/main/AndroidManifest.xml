@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MoviesActivity" />
+        <activity android:name=".SignUpActivity" />
     </application>
 
 </manifest>

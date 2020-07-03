@@ -8,4 +8,7 @@
     <string name="sign_up_2">Sign Up</string>
     <string name="enter_your_password_2">Repeat password</string>
     <string name="sign_out">Sign Out</string>
+    <string name="title_title">Title: {title}</string>
+    <string name="overview_overview">Overview: {overview}</string>
+    <string name="release_date">Release date: {releaseDate}</string>
 </resources>
